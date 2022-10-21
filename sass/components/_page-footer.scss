@@ -1,0 +1,39 @@
+.footer {
+    background-color: $bg-footer-color;
+    padding: 60px 0;
+}
+
+.footer__holder {
+    display: flex;
+}  
+
+.footer__address {
+ 
+}
+
+.logo-part--black {
+     color: $bg-color;
+}
+
+.address {
+    @extend %list;
+    margin: 20px 70px 0 0;
+}
+
+.address__link {
+ @extend %list;
+
+    color: $contact-footer-color;
+    font-style: normal;
+    line-height: 1.71;
+transition: color $time  $timing-function;
+
+&:hover,
+&:focus {
+    color: $link-hover-color;
+}
+}
+
+.address__link--white {
+     color: $bg-color;
+}

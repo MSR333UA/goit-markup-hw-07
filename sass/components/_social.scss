@@ -1,0 +1,28 @@
+.social {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+
+    transition: background-color $time $timing-function;
+    fill: $svg-color;
+
+    &:hover,
+    &:focus {
+    fill: $bg-color;
+    background-color: $link-hover-color;
+    }
+}
+
+.social__icon {
+    transition: fill $time $timing-function;
+}

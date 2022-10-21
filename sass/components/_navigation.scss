@@ -27,14 +27,14 @@
     line-height: calc(16/14);
 
     transition: color $time $timing-function;
+}
 
-    &.current {
+    .site-nav__link--active {
     @extend %list;
     padding: 32px 0;
     position: relative;
     color: $link-hover-color;
-    }
-    &.current::after {
+    &::after {
     content: ' ';
     position: absolute;
     left: 0;
@@ -45,4 +45,4 @@
     height: 4px;
     background-color: $link-hover-color;
 }
-}
+    }

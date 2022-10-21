@@ -168,7 +168,7 @@ svg {
 /* Рішення для бізнесу */
 
 
-.hero {
+/* .hero {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -179,9 +179,9 @@ svg {
         url(../images/hero.jpg);
     text-align: center;
     background-color: var(--bg-footer-color);
-}
+} */
 
-.hero .title {
+/* .hero__title {
     width: 696px;
     margin: 0 auto 30px;
 
@@ -193,10 +193,10 @@ svg {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
+} */
 
 
-.button {
+/* .button {
     cursor: pointer;
     border: none;
     padding: 10px 32px;
@@ -213,13 +213,13 @@ svg {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: inherit;
      transition: color, background-color, box-shadow var(--time) var(--timing-function);
-}
+} */
 
-.button:hover,
+/* .button:hover,
 .button:focus {
     color: var(--bg-color);
     background-color: #188CE8;
-}
+} */
 
 
 /* Наші переваги */
@@ -238,16 +238,15 @@ svg {
 } */
 
 
-.advantages {
+/* .advantages {
     padding-bottom: 0;
-}
+} */
 
-.advantage {
+/* .advantage {
     display: flex;
+} */
 
-}
-
-.bg-advantage {
+/* .advantage__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,16 +254,10 @@ svg {
 
     border-radius: 4px;
     background-color: var(--bg-team-color);
-}
+} */
 
-.customer-item:not(:last-child),
-.advantage-list:not(:last-child),
-.team-card:not(:last-child),
-.image:not(:last-child) {
-    margin-right: 30px;
-}
 
-.advantage-title {
+/* .advantage__title {
     margin-bottom: 10px;
     margin-top: 30px;
     width: 270px;
@@ -272,28 +265,28 @@ svg {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-}
+} */
 
-.advantage-text {
+/* .advantage__text {
     color: var(--title-text-color);
     line-height: 1.71;
     margin: 0;
-}
+} */
 
 
 /* Чим ми займаємося */
 
-.features-items {
+/* .features__items {
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.image {
+/* .features__image {
     width: 370px;
     position: relative;
-}
+} */
 
-.img-title {
+/* .features__title {
     text-transform: uppercase;
     font-weight: 700;
     padding: 27px 0;
@@ -303,15 +296,12 @@ svg {
     bottom: 0;
     margin: 0;
 
-
     line-height: calc(16/14);
     text-align: center;
     color: var(--bg-color);
     background-color: rgba(47, 48, 58, 0.8);
     ;
-
-}
-
+} */
 
 /* Наша команда */
 
@@ -323,7 +313,7 @@ svg {
     margin-right: auto;
     margin-left: auto;
 }
-
+/* 
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -333,7 +323,7 @@ svg {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-}
+} */
 
 .team-list {
     display: flex;
@@ -996,6 +986,8 @@ border: var(--link-hover-color) ;
     line-height: calc(30/16);
     padding: 0;
 
+
+     color: var(--bg-color);
      transition: color, background-color var(--time) var(--timing-function);
     background-color: var(--link-hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

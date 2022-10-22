@@ -793,7 +793,7 @@ color: rgba(255, 255, 255, 0.6);
 } */
 
 
-textarea {
+.form__textarea {
     outline: none;
      cursor: pointer;
     resize: none;
@@ -834,12 +834,12 @@ textarea:focus {
 } */
 
 
-.person:hover,
-.form-input:hover ~ svg,
-.form-field:focus-within svg
+/* .form__icon:hover,
+.form__field:hover ~ .form__icon,
+.form:focus-within .form__icon
  {
    fill: var(--link-hover-color);
-}
+} */
 
 /* .form__field {
     outline: none;
@@ -892,19 +892,19 @@ transition: border-color var(--time) var(--timing-function);
 
 
 
-.checkbox {
+/* .checkbox { */
     /* appearance: none; */
-opacity: 0;
+/* opacity: 0;
 z-index: -1;
 position: absolute;
 
 }
 
-.icon-check {
+.checkbox__icon {
     opacity: 0;
 }
 
-.new-checkbox {
+.checkbox__desc {
     position: relative;
     display: flex;
     justify-content: center;
@@ -918,7 +918,7 @@ position: absolute;
     
 }
 
-.checkbox-label {
+.checkbox__holder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -926,7 +926,7 @@ position: absolute;
 }
 
 
-.checkbox-label p {
+.checkbox__text {
     color: var(--title-text-color);
     cursor: pointer;
 margin: 0;
@@ -938,38 +938,38 @@ font-weight: 400;
 
 
 
-.checkbox-label a {
+.checkbox__link {
     color: var(--link-hover-color);
 }
 
 
 
 
-.new-checkbox:hover
+.checkbox__desc:hover
 {
       transition: border-color var(--time) var(--timing-function);
       border: 2px solid var(--link-hover-color);
 }
 
 
-.checkbox:checked + .checkbox-label .new-checkbox .icon-check {
+.checkbox:checked + .checkbox__holder .checkbox__desc .checkbox__icon {
 opacity: 1;
 
 }
 
 
-.checkbox:checked + .checkbox-label .new-checkbox {
+.checkbox:checked + .checkbox__holder .checkbox__desc {
  transition: background-color var(--time) var(--timing-function);
 background-color: var(--link-hover-color);
 border: var(--link-hover-color) ;
-}
+} */
 
 .submit {
     cursor: pointer;
     border: none;
     width: 200px;
     height: 50px;
-    margin-top: 30px;
+    
     letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;

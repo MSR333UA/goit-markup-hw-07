@@ -58,6 +58,18 @@
     display: flex;
     position: relative;
     flex-direction: column;
+
+    &:nth-child(6) {
+    margin-bottom: 20px;
+}
+
+&:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+    &:nth-child(-n + 4) {
+    gap: 4px;
+}
 }
 
 .form__name {
@@ -67,11 +79,8 @@
     letter-spacing: 0.01em;
 
     color: $title-text-color;
+}
 
-    &:not(:last-child) {
-    margin-bottom: 4px;
-}
-}
 
 .form__field {
     outline: none;
@@ -90,11 +99,6 @@ transition: border-color $time $timing-function;
     margin-bottom: 20px;
 }
 
-&:nth-child(-n + 5) {
-    margin-bottom: 12px;
-
-}
-
     &::placeholder {
     font-size: 12px;
     line-height: calc(14/12);
@@ -102,6 +106,16 @@ transition: border-color $time $timing-function;
 
     color: rgba(117, 117, 117, 0.5);
 }
+&:hover,
+&:focus
+ {
+    border: 1px solid $link-hover-color;
+}
+&:hover ~ .form__icon,
+&:focus ~ .form__icon {
+     fill: $link-hover-color;
+}
+
 }
 
 .form__icon {
@@ -110,14 +124,30 @@ transition: border-color $time $timing-function;
 
      transition: fill $time $timing-function;
     left: 12px;
-    bottom: 11px;
+    top: 29px;
 
-    &:hover,
-.form-input:hover ~ svg,
-.form-field:focus-within svg
+   &:hover,
+&:focus
  {
    fill: $link-hover-color;
-}
+    }
 }
 
+.form__textarea {
+    outline: none;
+     cursor: pointer;
+    resize: none;
+    padding: 12px 18px;
+    width: 448px;
+    height: 120px;
 
+    transition: border-color $time $timing-function;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: $bg-color;
+
+    &:hover, 
+&:focus {
+    border: 1px solid $link-hover-color;
+}
+}

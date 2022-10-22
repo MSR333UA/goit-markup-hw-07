@@ -394,7 +394,7 @@
             <input class="sing-up__textbox" type="email" name="mail" placeholder="E-mail" />
           </div>
 
-          <button class="button button--size" type="submit">
+          <button class="button button--icon" type="submit">
             <svg width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-icon-send"></use></svg
             >Підписатися
@@ -438,22 +438,30 @@
           </label>
           <label class="form">
             <span class="form__name">Коментар</span>
-            <textarea name="coment" id="coment" placeholder="Введіть текст"></textarea>
+            <textarea
+              class="form__textarea"
+              name="coment"
+              id="coment"
+              placeholder="Введіть текст"
+            ></textarea>
           </label>
         </form>
         <input class="checkbox" type="checkbox" name="policy" id="policy" />
-        <label class="checkbox-label" for="policy">
-          <span class="new-checkbox">
-            <svg class="icon-check" width="11" height="8">
+        <label class="checkbox__holder" for="policy">
+          <span class="checkbox__desc">
+            <svg class="checkbox__icon" width="11" height="8">
               <use href="./images/symbol-defs.svg#icon-check"></use>
             </svg>
           </span>
           <span
-            ><p class="p">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></p></span
+            ><p class="checkbox__text">
+              Погоджуюся з розсилкою та приймаю
+              <a class="checkbox__link" href="#">Умови договору</a>
+            </p></span
           >
         </label>
 
-        <button class="submit" type="submit">Відправити</button>
+        <button class="button button--size" type="submit">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

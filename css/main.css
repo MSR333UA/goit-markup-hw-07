@@ -163,7 +163,7 @@ svg {
 .button {
   cursor: pointer;
   border: none;
-  min-width: 216px;
+  width: 216px;
   height: 50px;
   padding: 0;
   color: #FFFFFF;
@@ -182,14 +182,21 @@ svg {
   background-color: #188CE8;
 }
 
-.button--size {
+.button--icon {
   display: flex;
+  width: 200px;
+  height: 50px;
   gap: 10px;
   margin-top: 48px;
   justify-content: center;
   flex-direction: row-reverse;
   align-items: center;
   fill: #FFFFFF;
+}
+
+.button--size {
+  width: 200px;
+  height: 50px;
 }
 
 .close-button {
@@ -512,6 +519,15 @@ svg {
   position: relative;
   flex-direction: column;
 }
+.form:nth-child(6) {
+  margin-bottom: 20px;
+}
+.form:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form:nth-child(-n+4) {
+  gap: 4px;
+}
 
 .form__name {
   cursor: pointer;
@@ -519,9 +535,6 @@ svg {
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: #757575;
-}
-.form__name:not(:last-child) {
-  margin-bottom: 4px;
 }
 
 .form__field {
@@ -539,14 +552,17 @@ svg {
   height: 120px;
   margin-bottom: 20px;
 }
-.form__field:nth-child(-n+5) {
-  margin-bottom: 12px;
-}
 .form__field::placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.form__field:hover, .form__field:focus {
+  border: 1px solid #2196F3;
+}
+.form__field:hover ~ .form__icon, .form__field:focus ~ .form__icon {
+  fill: #2196F3;
 }
 
 .form__icon {
@@ -554,10 +570,84 @@ svg {
   position: absolute;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   left: 12px;
-  bottom: 11px;
+  top: 29px;
 }
-.form__icon:hover,
-.form__icon .form-input:hover ~ svg,
-.form__icon .form-field:focus-within svg {
+.form__icon:hover, .form__icon:focus {
   fill: #2196F3;
+}
+
+.form__textarea {
+  outline: none;
+  cursor: pointer;
+  resize: none;
+  padding: 12px 18px;
+  width: 448px;
+  height: 120px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+.form__textarea:hover, .form__textarea:focus {
+  border: 1px solid #2196F3;
+}
+
+.checkbox {
+  /* appearance: none; */
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.checkbox__icon {
+  opacity: 0;
+}
+
+.checkbox__desc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 2px solid #212121;
+}
+
+.checkbox__holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 20px 0 30px 0;
+}
+
+.checkbox__text {
+  color: #757575;
+  cursor: pointer;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.checkbox__link {
+  color: #2196F3;
+}
+
+.checkbox__desc:hover {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #2196F3;
+}
+
+.checkbox:checked + .checkbox__holder .checkbox__desc .checkbox__icon {
+  opacity: 1;
+}
+
+.checkbox:checked + .checkbox__holder .checkbox__desc {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #2196F3;
+  border: #2196F3;
 }/*# sourceMappingURL=main.css.map */
